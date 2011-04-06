@@ -1,1 +1,56 @@
-ttesting
+yii-facebook
+
+Facebook Library Wraper
+
+This is a mod
+
+
+
+
+
+**Installation**
+
+* Extract the release files under 'protected/extensions'
+
+* Configure settings in 'Main.php'
+
+
+**Site Configuration**
+
+For Like Buttons
+
+		'import'=>array(		
+			'application.extensions.yiifacebook.WidgetLike',
+		...
+		
+
+For Single Sign On (SSO)
+
+		'components'=>array(	
+			'facebook'=>array(
+				'class' => 'ext.yiifacebook.YiiFacebook',
+				'dev_appid'=>'YOUT_DEV_APP_ID',
+				'dev_secret'=>'YOUT_DEV_APP_SECRET',
+				'cookie'=>false,
+			),		
+		...
+
+
+	
+	
+**Usage**
+
+*Widget Like Button*
+
+Stick this code inside a layout or view file.
+
+Optionaly pass a 'url' (default will use the current document url)
+
+		<?php  
+		$this->widget('application.extensions.yiifacebook.WidgetLike',
+		array(
+				'url'=>'',//when blank use current page   
+		));
+		?>
+
+

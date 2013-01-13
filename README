@@ -2,11 +2,6 @@ yii-facebook
 
 Facebook Library Wrapper
 
-This is a mod
-
-
-
-
 
 **Installation**
 
@@ -54,4 +49,3 @@ Optionaly pass a 'url' (default will use the current document url)
 		?>
 
 
-I own this
